@@ -14,12 +14,6 @@ public class Main {
             threads[i].start();
         }
 
-        for (Thread t:threads){
-            try {
-                t.join();
-            }catch (InterruptedException e){
-                System.out.println(e.getMessage());
-            }
-        }
+
     }
 }
